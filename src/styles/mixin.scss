@@ -1,0 +1,19 @@
+//宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin line($height) {
+  height: $height;
+  line-height: $height;
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+    zoom: 1;
+  }
+}

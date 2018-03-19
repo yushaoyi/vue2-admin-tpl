@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+@import "./reset";
+//@import './var';
+//@import './mixin'; // 在build/util里使用sass-resource-loader做了配置
+@import "./hack";
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.app-main {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.app-main-container {
+  position: absolute;
+  width: 100%;
+  top: 69px;
+  bottom: 0;
+}
+
+.app-body {
+  position: relative;
+  margin-left: 200px;
+  height: 100%;
+  overflow-x: hidden; // BFC
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  background-color: $content-bg;
+  min-width: 1000px;
+  padding: 0 20px 20px 20px;
+}
+
+.app-main-container.app-main--collapse {
+
+  .left-nav {
+    width: 65px;
+
+    i {
+      margin-right: 25px;
+    }
+
+    .nav-dedent {
+      text-align: left;
+    }
+  }
+
+  .app-body {
+    margin-left: 65px;
+  }
+}
+
+
+.text-center {
+  text-align: center;
+}

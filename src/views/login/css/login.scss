@@ -1,0 +1,145 @@
+
+.login-page {
+  height: 100%;
+
+  .pt50 {
+    padding-top: 50px;
+  }
+
+  .pb50 {
+    padding-bottom: 50px;
+  }
+
+  .mauto {
+    margin: 0 auto;
+  }
+
+  .font-18 {
+    font-size: 18px;
+  }
+
+  .mt45 {
+    margin-top: 45px;
+  }
+
+  .login-logo {
+    width: 188px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  .login-title {
+    color: #02b4a8;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    vertical-align: middle;
+  }
+
+  .login-container {
+    @include wh(440px, 480px);
+    //width: 100%;
+    //height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -220px;
+    top: 50%;
+    margin-top: -240px;
+  }
+  .el-form-item__content {
+    line-height: 50px;
+  }
+  .el-form-item__error {
+    left: 55px;
+  }
+  .el-input-group__append, .el-input-group__prepend {
+    background-color: #ffffff;
+    padding: 0 15px;
+  }
+  .el-input__inner {
+    background-color: #f5f5f5;
+    height: 50px;
+  }
+  .w300 {
+    width: 300px;
+  }
+  .pt50 {
+    padding-top: 50px;
+  }
+  .pb50 {
+    padding-bottom: 50px;
+  }
+  .login-btn {
+    background-color: $theme-color;
+    color: #ffffff;
+    height: 50px;
+    font-size: 18px;
+    width: 100%;
+    border-color: transparent;
+  }
+
+  .el-button.login-btn:active, .el-button.login-btn:focus, .el-button.login-btn:hover {
+    color: #ffffff;
+    border-color: transparent;
+    background-color: #02a99e;
+    outline: 0;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: $theme-color;
+    border-color: $theme-color;
+  }
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: #5a5e66;
+  }
+  .el-checkbox__inner:hover {
+    border-color: $theme-color;
+  }
+  .el-input.is-active .el-input__inner, .el-input__inner:focus {
+    border-color: $theme-color;
+    outline: 0;
+  }
+  .el-button--text, .el-button--text:active {
+    color: #5a5e66;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  .el-button--text:hover{
+    color: #02b4a8;
+  }
+  .line40 {
+    @include line(40px);
+  }
+  .line24 {
+    @include line(24px);
+  }
+
+  .login-label {
+    color: #333333;
+  }
+  .font-19 {
+    font-size: 19px;
+  }
+  .el-input--prefix {
+    padding-left: 50px;
+    span.el-input__prefix {
+      border: 1px solid #d8dce5;
+      border-radius: 4px;
+      background-color: #ffffff;
+      padding: 0 15px;
+      border-top-right-radius: 0;
+      border-right: transparent;
+      border-bottom-right-radius: 0;
+      left: 0;
+    }
+    input.el-input__inner {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-left: 15px;
+    }
+  }
+
+}
