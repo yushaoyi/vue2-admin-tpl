@@ -1,4 +1,4 @@
-# schoolin-boss
+# vue2-admin-tpl
 
 > A Vue.js project
 
